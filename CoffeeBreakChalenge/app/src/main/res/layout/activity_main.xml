@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.qasimnawaz.coffeebreakchalenge.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B0C4DE"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="10sp"
+            android:hint="Name"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/ToppingsTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="10sp"
+            android:text="toppings"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/CreamCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="10sp"
+            android:paddingLeft="15sp"
+            android:text="White Cream   $12"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/ChocolateCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="10sp"
+            android:paddingLeft="15sp"
+            android:text="Chocolate        $15"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/QuantityTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="10sp"
+            android:text="quantity"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/MinusButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="10sp"
+                android:onClick="decrement"
+                android:text="-"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/PlusButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10sp"
+                android:onClick="increment"
+                android:text="+"
+                android:textSize="26sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/OrderSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="10sp"
+            android:text="order summary"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/SummaryTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:text="summary"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/OrderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="submitOrder"
+            android:text="ORDER"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+</ScrollView>
