@@ -14,9 +14,7 @@ import com.example.android.miwok.Activities.PhrasesFragment;
  */
 
 
-
-public class PAdapter extends FragmentPagerAdapter
-{
+public class PAdapter extends FragmentPagerAdapter {
     int PAGE_NUM = 4;
 
     public PAdapter(FragmentManager fm) {
@@ -25,20 +23,20 @@ public class PAdapter extends FragmentPagerAdapter
 
     @Override
     public CharSequence getPageTitle(int position) {
-        switch (position){
-            case 0:{
+        switch (position) {
+            case 0: {
                 return "Colors";
             }
-            case 1:{
+            case 1: {
                 return "Family";
             }
-            case 2:{
+            case 2: {
                 return "Numbers";
             }
-            case 3:{
+            case 3: {
                 return "Phrases";
             }
-            default:{
+            default: {
                 return null;
             }
         }
@@ -47,20 +45,20 @@ public class PAdapter extends FragmentPagerAdapter
     @Override
     public Fragment getItem(int position) {
 
-        switch (position){
-            case 0:{
+        switch (position) {
+            case 0: {
                 return new ColorsFragment();
             }
-            case 1:{
+            case 1: {
                 return new FamilyFragment();
             }
-            case 2:{
+            case 2: {
                 return new NumbersFragment();
             }
-            case 3:{
+            case 3: {
                 return new PhrasesFragment();
             }
-            default:{
+            default: {
                 return null;
             }
         }

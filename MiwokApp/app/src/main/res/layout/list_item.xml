@@ -14,13 +14,13 @@
     <LinearLayout
 
         android:id="@+id/textContainer"
-        android:background="@color/tan_background"
         android:layout_width="match_parent"
         android:layout_height="@dimen/list_item_height"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/img_View"
+        android:background="@color/tan_background"
         android:orientation="vertical"
         android:paddingLeft="16dp">
 

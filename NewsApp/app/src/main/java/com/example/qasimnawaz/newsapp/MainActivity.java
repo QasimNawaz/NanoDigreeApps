@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
     EditText news;
     String word;
     private String feedURL = "https://ajax.googleapis.com/ajax/services/feed/find?v=1.0&q=";
-
     String[] links  = new String[10];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                     String title = titles.getString("title");
                     title = String.valueOf(Html.fromHtml(title));
 
-                    links[i] = titles.getString("url");
+                    links[i] = titles.getString("link");
 
                     arrayList.add(new WordAdapter(title));
 
